@@ -166,3 +166,14 @@
 body {
   scroll-behavior: smooth;
 }
+
+#carouselExampleCaptions {
+  max-height: 400px; /* Ajusta la altura que quieras */
+  overflow: hidden;  /* Oculta cualquier parte que sobresalga */
+}
+
+#carouselExampleCaptions .carousel-item img {
+  height: 280px;     /* Igual que el max-height del contenedor */
+  object-fit: cover;  /* La imagen se recorta para llenar el contenedor */
+  width: 100%;
+}
