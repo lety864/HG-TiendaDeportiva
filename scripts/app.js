@@ -15,10 +15,17 @@ async function cargarArticulosFootball() {
           const card = document.createElement("div");
           card.className = "card";
           card.innerHTML = `
-            <h2>${item.nombre}</h2>
-            <img src="${item.imagen}" alt="${item.nombre}">
-            <p>${item.precio}</p>
-            <p>${item.stock}</p>
+            <div class="card">
+            <img src="${item.imagen}" class="card-img-top" alt="${item.nombre}">
+              <div class="card-body">
+                <h5 class="card-title">${item.nombre}</h5>
+                <p class="card-text text-center">Stock: ${item.stock}</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fw-bold">${item.precio}</span> <!-- Precio -->
+                  <a href="#" class="btn btn-primary">Agregar a carrito</a> <!-- Botón -->
+                </div>              
+              </div>
+            </div>
           `;
           container.appendChild(card);
         });
@@ -41,10 +48,17 @@ async function cargarArticulosBasquetBall() {
           const card = document.createElement("div");
           card.className = "card";
           card.innerHTML = `
-            <h2>${item.nombre}</h2>
-            <img src="${item.imagen}" alt="${item.nombre}">
-            <p>${item.precio}</p>
-            <p>${item.stock}</p>
+            <div class="card">
+            <img src="${item.imagen}" class="card-img-top" alt="${item.nombre}">
+              <div class="card-body">
+                <h5 class="card-title">${item.nombre}</h5>
+                <p class="card-text text-center">Stock: ${item.stock}</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fw-bold">${item.precio}</span> <!-- Precio -->
+                  <a href="#" class="btn btn-primary">Agregar a carrito</a> <!-- Botón -->
+                </div>              
+              </div>
+            </div>
           `;
           container.appendChild(card);
         });
@@ -66,10 +80,17 @@ async function cargarArticulosBaseball() {
           const card = document.createElement("div");
           card.className = "card";
           card.innerHTML = `
-            <h2>${item.nombre}</h2>
-            <img src="${item.imagen}" alt="${item.nombre}">
-            <p>${item.precio}</p>
-            <p>${item.stock}</p>
+            <div class="card">
+            <img src="${item.imagen}" class="card-img-top" alt="${item.nombre}">
+              <div class="card-body">
+                <h5 class="card-title">${item.nombre}</h5>
+                <p class="card-text text-center">Stock: ${item.stock}</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <span class="fw-bold">${item.precio}</span> <!-- Precio -->
+                  <a href="#" class="btn btn-primary">Agregar a carrito</a> <!-- Botón -->
+                </div>              
+              </div>
+            </div>
           `;
           container.appendChild(card);
         });
