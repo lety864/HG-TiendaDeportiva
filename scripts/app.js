@@ -13,9 +13,9 @@ async function cargarArticulosFootball() {
 
         data.forEach(item => {
           const card = document.createElement("div");
-          card.className = "card";
+          card.className = "col-sm-6 col-md-4 col-lg-3 mb-4";
           card.innerHTML = `
-            <div class="card">
+            <div class="card h-100">
             <img src="${item.imagen}" class="card-img-top" alt="${item.nombre}">
               <div class="card-body">
                 <h5 class="card-title">${item.nombre}</h5>
@@ -46,9 +46,9 @@ async function cargarArticulosBasquetBall() {
 
         data.forEach(item => {
           const card = document.createElement("div");
-          card.className = "card";
+          card.className = "col-sm-6 col-md-4 col-lg-3 mb-4";
           card.innerHTML = `
-            <div class="card">
+            <div class="card h-100">
             <img src="${item.imagen}" class="card-img-top" alt="${item.nombre}">
               <div class="card-body">
                 <h5 class="card-title">${item.nombre}</h5>
@@ -78,9 +78,9 @@ async function cargarArticulosBaseball() {
 
         data.forEach(item => {
           const card = document.createElement("div");
-          card.className = "card";
+          card.className = "col-sm-6 col-md-4 col-lg-3 mb-4";
           card.innerHTML = `
-            <div class="card">
+            <div class="card h-100">
             <img src="${item.imagen}" class="card-img-top" alt="${item.nombre}">
               <div class="card-body">
                 <h5 class="card-title">${item.nombre}</h5>
