@@ -1,0 +1,70 @@
+let Football = [
+    { id: 1, nombre: 'Balón de Fútbol', precio: 500.00, stock: 15, imagen:"https://m.media-amazon.com/images/I/71bgARSO2EL.jpg"},
+    { id: 2, nombre: 'Calzado deportivo futbolista', precio: 1200.00, stock: 25, imagen:"https://ss203.liverpool.com.mx/xl/1163101773.jpg" },
+    { id: 3, nombre: 'Jersey', precio: 850.00, stock: 10, imagen:"https://jerseyhubmx.com/cdn/shop/files/AF3AE436-172B-4BBC-9F80-A38E77B354BC.jpg?v=1710908851&width=1946" },
+    { id: 4, nombre: 'Espinilleras', precio: 200.00, stock: 13, imagen:"https://ss201.liverpool.com.mx/xl/1144554490.jpg"},
+    { id: 5, nombre: 'Medias de fútbol', precio: 300.00, stock: 12, imagen:"https://voit.vtexassets.com/arquivos/ids/162312-800-800?v=638354897410630000&width=800&height=800&aspect=true" },
+    { id: 6, nombre: 'Short', precio: 250.00, stock: 9, imagen:"https://unicosmoderna.com/cdn/shop/files/SHORT-ADIDAS-EH4210-HOMBRE-MARINO-156114_1.jpg?v=1745868738&width=2048" },
+    { id: 7, nombre: 'Brazalete de capitán', precio: 200.00, stock: 5, imagen:"https://i5.walmartimages.com/asr/7958f91c-5435-43f1-ad78-159844bf87a6.5f50958f353ac49219307055749d94b5.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" },
+    { id: 8, nombre: 'Guantes de Portero Profesional (Grip Alto)', precio: 69.90, stock: 40, imagen: "https://m.media-amazon.com/images/I/71HIUc4K7bL.jpg" },
+    { id: 9, nombre: 'Red para Portería Estándar (Fútbol 11)', precio: 110.00, stock: 12, imagen: "https://http2.mlstatic.com/D_NQ_NP_906463-MLM79418405165_092024-O-red-para-porteria-futbol-soccer-oficial-embreada.webp" },
+    { id: 10, nombre: 'Conos de Marcaje (Set de 50 platillos)', precio: 29.99, stock: 35, imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkqAS0j9RraHgLxgW8_AvzrsRvIOQ0-WYNBg&s" },
+    { id: 11, nombre: 'Petos de Entrenamiento (Pack de 10)', precio: 49.95, stock: 18, imagen: "https://m.media-amazon.com/images/I/613TVzW4lvL.jpg" },
+    { id: 12, nombre: 'Escalera de Agilidad (6 metros)', precio: 39.99, stock: 60, imagen: "https://http2.mlstatic.com/D_Q_NP_912459-MLM87611896286_072025-O.webp" },
+    { id: 13, nombre: 'Silbato Metálico para Árbitro', precio: 8.50, stock: 95, imagen: "https://m.media-amazon.com/images/I/51VfPLXo77L._UF894,1000_QL80_.jpg" },
+    { id: 14, nombre: 'Tarjetas de Árbitro (Roja/Amarilla)', precio: 6.99, stock: 110, imagen: "https://m.media-amazon.com/images/I/616WPQcD4DL._UF350,350_QL80_.jpg" },
+    { id: 15, nombre: 'Bolsa para Balones (Capacidad 10 Balones)', precio: 34.50, stock: 22, imagen: "https://m.media-amazon.com/images/I/71KBad7PQJL.jpg" },
+    { id: 16, nombre: 'Bomba de Aire Portátil (Manual)', precio: 18.99, stock: 145, imagen: "https://http2.mlstatic.com/D_NQ_NP_979044-MLA92761599349_092025-O.webp" },
+    { id: 17, nombre: 'Malla de Rebote (Reboteador)', precio: 85.00, stock: 15, imagen: "https://m.media-amazon.com/images/I/61ylEpLmeZL._UF894,1000_QL80_.jpg" },
+    { id: 18, nombre: 'Cinta Kinesiológica (Pre-Corte)', precio: 11.50, stock: 200, imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmXZnkqFGCXR2v1LWrtO6CkQzUs-VER3F9qw&s" },
+    { id: 19, nombre: 'Short de Portero (Acolchado)', precio: 45.00, stock: 28, imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVSr_PMCSoh3xOwhXe8k51XUg9kXflib5yog&s" },
+    { id: 20, nombre: 'Bandas de Resistencia (Set 5 Niveles)', precio: 21.99, stock: 70, imagen: "https://m.media-amazon.com/images/I/61f1IYEY2sL.jpg" }
+];
+
+let  BasquetBall= [
+    { id: 1, nombre: 'Balón de Basquet', precio: 300.00, stock: 35, imagen:"https://contents.mediadecathlon.com/p2942851/k$aa4b15b68d6057beed7b338d3f5c2764/balon-de-basquetbol-adulto-r100-talla-7-naranja-perfecto-iniciacion-y-resistente.jpg"},
+    { id: 2, nombre: 'Zapatillas de Basquet', precio: 1800.50, stock: 25, imagen:"https://m.media-amazon.com/images/I/41LgXU9HcLL._SR290,290_.jpg"},
+    { id: 3, nombre: 'Camiseta NBA', precio: 900.00, stock: 10, imagen:"https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/d9f55169-72c8-4503-a0a2-b65dc5e1f3ec/SEL+MNK+DF+JSY+V5+DURANT.png"},
+    { id: 4, nombre: 'Short de Basquet', precio: 500.00, stock: 15, imagen:"https://ss205.liverpool.com.mx/xl/1163088003.jpg"},
+    { id: 5, nombre: 'Muñequeras', precio: 300.0, stock: 25, imagen:"https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/493d7df7-4745-4dee-a113-9b2b4732065d/NIKE+WRISTBANDS+NBA.png"},
+    { id: 6, nombre: 'Rodilleras acolchadas', precio: 180.00, stock: 10, imagen:"https://contents.mediadecathlon.com/p2348092/k$64a5d843dcdea5608ae0fcd0f1d386fa/pqt-de-2-rodilleras-de-proteccion-de-basquetbol-adulto.jpg"},
+    { id: 7, nombre: 'Calcetines de Baloncesto (Acolchados, Par)', precio: 19.99, stock: 220, imagen: "https://i5.walmartimages.com/asr/f81775ed-eeb9-4b78-b0e7-95f2be898a0e.34092eba4c26226a23ef728ae6438486.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" },
+    { id: 8, nombre: 'Tobillera de Compresión (Unidad)', precio: 32.00, stock: 75, imagen: "https://m.media-amazon.com/images/I/61oi9+U1maL.jpg" },
+    { id: 9, nombre: 'Tablero y Canasta (Portátil)', precio: 299.99, stock: 12, imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8RW4ljXxeetZJ1VEwlM_VRDC4UY_tuuab7w&s" },
+    { id: 10, nombre: 'Red de Canasta (Reforzada)', precio: 14.50, stock: 180, imagen: "https://img.archiexpo.es/images_ae/photo-mg/155801-14094681.jpg" },
+    { id: 11, nombre: 'Inflador de Balones con Agujas (Set)', precio: 18.00, stock: 90, imagen: "https://img.kwcdn.com/product/Fancyalgo/VirtualModelMatting/4b797b2ab7fc9ae99930de25c25c82ce.jpg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp" },
+    { id: 12, nombre: 'Conos de Entrenamiento (Set de 10)', precio: 25.00, stock: 55, imagen: "https://deportesguerra.com.mx/cdn/shop/products/cono4.png?v=1673046897&width=4000" },
+    { id: 13, nombre: 'Gafas de Regate (Blind Dribbling)', precio: 19.50, stock: 30, imagen: "https://m.media-amazon.com/images/I/51q85QtXGTL._UF1000,1000_QL80_.jpg" },
+    { id: 14, nombre: 'Mallas de Compresión (Largas)', precio: 59.99, stock: 50, imagen: "https://www.phantom-athletics.com/cdn/shop/files/Phantom-Athletics-Tight-Apex-Blue-1-2.jpg?v=1738177984" },
+    { id: 15, nombre: 'Petos de Entrenamiento (Pack 6)', precio: 39.00, stock: 20, imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTGe63buoIgKTtv7YJuZX8vhVUnOL3UgIkUw&s" },
+    { id: 16, nombre: 'Cronómetro Digital', precio: 22.50, stock: 85, imagen: "https://m.media-amazon.com/images/I/61lf3-49LQL.jpg" },
+    { id: 17, nombre: 'Botella de Agua Deportiva (1 Litro)', precio: 11.99, stock: 130, imagen: "https://resources.sears.com.mx/medios-plazavip/mkt/65865a01a39d6_91jpg.jpg?scale=500&qlty=75" },
+    { id: 18, nombre: 'Rodillo de Espuma (Foam Roller)', precio: 45.00, stock: 25, imagen: "https://m.media-amazon.com/images/I/613FdrBAx1L._UF1000,1000_QL80_.jpg" },
+    { id: 19, nombre: 'Bolsa de Deporte (Compartimento para Zapatillas)', precio: 55.00, stock: 35, imagen: "https://http2.mlstatic.com/D_NQ_NP_708604-MLU76921801693_062024-O.webp" },
+    { id: 20, nombre: 'Vendas Elásticas Deportivas (Pack 2)', precio: 9.99, stock: 160, imagen: "https://http2.mlstatic.com/D_NQ_NP_920624-MLA82790312924_032025-O.webp" }
+];
+
+let  BaseBall= [
+    { id: 1, nombre: 'Pelota de Baseball', precio: 50.00, stock: 15, imagen:"https://chapurmx.vtexassets.com/arquivos/ids/277508-800-auto?v=638348556161870000&width=800&height=auto&aspect=true"},
+    { id: 2, nombre: 'Guante de Baseball', precio: 120.50, stock: 25, imagen:"https://i5.walmartimages.com/asr/fe25106d-1d8f-4383-8be2-a6c8de1895df.5e9444b5d614dd257d564dcdc1a1feb6.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"},
+    { id: 3, nombre: 'Jersey de Baseball', precio: 85.00, stock: 10, imagen:"https://beisbolmania.mx/cdn/shop/files/SERPIENTESCAMISOLATIENDADEBEISBOLBEISBOLSPORTSBEISBOLMANIA_2000x.jpg?v=1694107443"},
+    { id: 4, nombre: 'Bate de Baseball', precio: 500.00, stock: 13, imagen:"https://static.wixstatic.com/media/1636a6_ed73c0e079f844f2be24bd6adbcdfe3f~mv2.jpg/v1/fill/w_980,h_980,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/1636a6_ed73c0e079f844f2be24bd6adbcdfe3f~mv2.jpg"},
+    { id: 5, nombre: 'Pantalón de Baseball', precio: 500.00, stock: 12, imagen:"https://beisbolmania.mx/cdn/shop/products/PantalonDeBeisbolSoftbolBeisportCortoGrisAdulto_3333x.jpg?v=1627345292" },
+    { id: 6, nombre: 'Máscara protectora', precio: 600.00, stock: 9, imagen:"https://m.media-amazon.com/images/I/713oDSlKxxL._UF894,1000_QL80_.jpg" },
+    { id: 7, nombre: 'Peto protector', precio: 1000.00, stock: 5, imagen:"https://m.media-amazon.com/images/I/71+VIC0hsqL.jpg" },
+    { id: 8, nombre: 'Guante de Receptor (Catcher’s Mitt)', precio: 135.00, stock: 22, imagen: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQet0qJjDDuSc7RxP1N6hzO6ULkRkLUSWS9Yg&s" },
+    { id: 9, nombre: 'Protectores de Piernas (Receptor)', precio: 79.95, stock: 25, imagen: "https://http2.mlstatic.com/D_NQ_NP_712720-MLM72756718418_112023-O--protectores-de-pierna-de-receptor-de-beisbol-pro-x-aprob.webp" },
+    { id: 10, nombre: 'Guantes de Bateo (Par)', precio: 29.99, stock: 150, imagen: "https://contents.mediadecathlon.com/p2430902/k$cdc8da5dd492f30c31f44132e1b7d3bc/guante-de-beisbol-ba550-kipsta-guante-de-bateo-para-adulto.jpg?format=auto&quality=40&f=800x800" },
+    { id: 11, nombre: 'Spikes de Béisbol (Tacos Metálicos)', precio: 75.00, stock: 80, imagen: "https://beisbolmania.mx/cdn/shop/products/SpikeBeisbolNikeReactVaporUltraflyElite4AzulMarinoSpikeBeisbolNikeReactVaporUltraflyElite4BlancoDoradoSPIKESBEISBOLSOFTBOLBEISBOLSPORTSBEISBOLMANIA_1024x1024.jpg?v=1658948582" },
+    { id: 12, nombre: 'Tee de Bateo (Ajustable)', precio: 39.99, stock: 50, imagen: "https://m.media-amazon.com/images/I/61df8D7iEQL.jpg" },
+    { id: 13, nombre: 'Bolsa para Bate y Equipo', precio: 55.00, stock: 45, imagen: "https://m.media-amazon.com/images/I/713rgHWZZKL._UF894,1000_QL80_.jpg" },
+    { id: 14, nombre: 'Resina de Pino (Pine Tar) y Aplicador', precio: 18.50, stock: 120, imagen: "https://images-na.ssl-images-amazon.com/images/I/51++pO9-f3L._AC_UL375_SR375,375_.jpg" },
+    { id: 15, nombre: 'Careta de Árbitro', precio: 42.00, stock: 15, imagen: "https://http2.mlstatic.com/D_NQ_NP_793520-MLM72448076808_102023-O-careta-de-arbitro-umpire-beisbol-champion-sport-bm200sl.webp" },
+    { id: 16, nombre: 'Guante de Fildeo de Entrenamiento', precio: 35.00, stock: 70, imagen: "https://http2.mlstatic.com/D_NQ_NP_998551-CBT80757410632_112024-O-guante-de-beisbol-guante-de-beisbol-para-fildeo-juego-de.webp" },
+    { id: 17, nombre: 'Malla de Bateo (Portátil 7x7 pies)', precio: 89.90, stock: 18, imagen: "https://http2.mlstatic.com/D_NQ_NP_804061-MLM70875684186_082023-O.webp" },
+    { id: 18, nombre: 'Protector de Ingle (Copa)', precio: 14.99, stock: 180, imagen: "https://www.mmalacrianza.com/cdn/shop/files/2_fabf49c3-3cee-46ad-9397-0ba8c366eda5.jpg?v=1696883950&width=1445" },
+    { id: 19, nombre: 'Bandera de Base (Set de 4)', precio: 25.00, stock: 30, imagen: "https://www.bestbuysoccer.com/cdn/shop/files/kwik-goal-official-corner-flags-set-of-4-298777_1200x.webp?v=1750738370" },
+    { id: 20, nombre: 'Balón de Práctica (Soft-Toss)', precio: 3.50, stock: 300, imagen: "https://http2.mlstatic.com/D_NQ_NP_644871-CBT75254136159_032024-O.webp" }
+];
+
+module.exports = { Football, BasquetBall, BaseBall };
