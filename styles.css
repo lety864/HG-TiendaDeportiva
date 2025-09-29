@@ -90,7 +90,7 @@
   background: linear-gradient(135deg, var(--naranja-intenso), var(--rosa-rojo));
   color: var(--blanco);
   text-align: center;
-  padding: 100px 20px;
+  padding: 100px 10px;
 }
 
 .hero .btn {
@@ -177,6 +177,21 @@ body {
   object-fit: cover;  /* La imagen se recorta para llenar el contenedor */
   width: 100%;
 }
+
+.carousel-caption h1,
+.carousel-caption p {
+    color: white; /* Color del texto */
+    text-shadow: 
+       -0.65px -0.65px 0 #000,  
+        0.65px -0.65px 0 #000,
+       -0.65px  0.65px 0 #000,
+        0.65px  0.65px 0 #000;
+}
+
+.carousel-item img {
+  border-radius: 15px; /* ajusta el valor a tu gusto */
+}
+
 
 /* Carrito */
 .cart-item {
