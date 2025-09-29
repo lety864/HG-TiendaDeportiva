@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>LEGENDZONE</title>
   <!-- Bootstrap 5 CSS -->
-<link href="styles.css" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script defer src="./scripts/app.js"></script>
 </head>
 <body>
-
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container">
@@ -21,7 +21,9 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="#Inicio">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#Carrito">Carrito</a></li>
+        
+          <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito<span class="badge bg-danger" id="cartBadge" style="display: none;">0</span>
+</a></li>
           <li class="nav-item"><button class="btn btn-outline-light ms-3" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button></li>
         </ul>
       </div>
@@ -75,166 +77,26 @@
 
   <!-- Sección de productos -->
   <main class="container my-5" id="productos">
-
-    <!-- Béisbol -->
     <section id="baseball" class="mb-5">
-      <h2 class="mb-4">Béisbol</h2>
+      <h2 class="mb-4">Articulos</h2>
+      <button type="button" onclick="cargarArticulosFootball()" class="btn btn-success">Soccer</button>
+      <button type="button" onclick="cargarArticulosBasquetBall()" class="btn btn-success">Basquetball</button>
+      <button type="button" onclick="cargarArticulosBaseball()" class="btn btn-success">Baseball</button>
       <div class="row" id="baseball-list">
         <!-- Productos inyectados desde JS -->
-        <div class="row row-hover">
-  <div class="col-sm-4 mb-3 mb-sm-0">
-    <div class="card">
-      <img src="img/articulo1.jpg" class="card-img-top" alt="Artículo 1">
-      <div class="card-body">
-        <h5 class="card-title">Artículo 1</h5>
-        <p class="card-text">Descripción del artículo 1.</p>
-        <div class="d-flex justify-content-between align-items-center">
-          <span class="fw-bold">$25.00</span>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-sm-4">
-    <div class="card">
-      <img src="img/articulo2.jpg" class="card-img-top" alt="Artículo 2">
-      <div class="card-body">
-        <h5 class="card-title">Artículo 2</h5>
-        <p class="card-text">Descripción del artículo 2.</p>
-        <div class="d-flex justify-content-between align-items-center">
-          <span class="fw-bold">$25.00</span>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="col-sm-4">
-    <div class="card">
-      <img src="img/articulo3.jpg" class="card-img-top" alt="Artículo 3">
-      <div class="card-body">
-        <h5 class="card-title">Artículo 3</h5>
-        <p class="card-text">Descripción del artículo 3.</p>
-        <div class="d-flex justify-content-between align-items-center">
-          <span class="fw-bold">$25.00</span>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-      </div>
-    </section>
-
-    <!-- Soccer -->
-    <section id="soccer" class="mb-5">
-      <h2 class="mb-4">Soccer</h2>
-      <div class="row" id="soccer-list">
-        <!-- Productos inyectados desde JS -->
-         <!-- Productos inyectados desde JS -->
         <div class="row">
-          <div class="col-sm-4 mb-3 mb-sm-0">
-            <div class="card">
-              <img src="img/articulo1.jpg" class="card-img-top" alt="Artículo 2">
-              <div class="card-body">
-                <h5 class="card-title">Artículo 1</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <span class="fw-bold">$25.00</span> <!-- Precio -->
-                  <a href="#" class="btn btn-primary">Go somewhere</a> <!-- Botón -->
-                </div>              
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card">
-              <img src="img/articulo2.jpg" class="card-img-top" alt="Artículo 2">
-              <div class="card-body">
-                <h5 class="card-title">Artículo 2</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <span class="fw-bold">$25.00</span> <!-- Precio -->
-                  <a href="#" class="btn btn-primary">Go somewhere</a> <!-- Botón -->
-                </div>            
-              </div>  
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card">
-              <img src="img/articulo3.jpg" class="card-img-top" alt="Artículo 2">
-              <div class="card-body ">
-                <h5 class="card-title">Artículo 3</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <span class="fw-bold">$25.00</span> <!-- Precio -->
-                  <a href="#" class="btn btn-primary">Go somewhere</a> <!-- Botón -->
-                </div>
-              </div>
-            </div>
+          <div id="articulos" class="col-sm-4 mb-3 mb-sm-0">
+            <!-- Card -->
           </div>
         </div>
       </div>
     </section>
-
-    <!-- Básquetbol -->
-    <section id="basketball" class="mb-5">
-      <h2 class="mb-4">Básquetbol</h2>
-      <div class="row" id="basketball-list">
-        <!-- Productos inyectados desde JS -->
-         <!-- Productos inyectados desde JS -->
-        <div class="row">
-          <div class="col-sm-4 mb-3 mb-sm-0">
-            <div class="card">
-              <img src="img/articulo1.jpg" class="card-img-top" alt="Artículo 2">
-              <div class="card-body">
-                <h5 class="card-title">Artículo 1</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <span class="fw-bold">$25.00</span> <!-- Precio -->
-                  <a href="#" class="btn btn-primary">Go somewhere</a> <!-- Botón -->
-                </div>              
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card">
-              <img src="img/articulo2.jpg" class="card-img-top" alt="Artículo 2">
-              <div class="card-body">
-                <h5 class="card-title">Artículo 2</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <span class="fw-bold">$25.00</span> <!-- Precio -->
-                  <a href="#" class="btn btn-primary">Go somewhere</a> <!-- Botón -->
-                </div>            
-              </div>  
-            </div>
-          </div>
-          <div class="col-sm-4">
-            <div class="card">
-              <img src="img/articulo3.jpg" class="card-img-top" alt="Artículo 2">
-              <div class="card-body ">
-                <h5 class="card-title">Artículo 3</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <div class="d-flex justify-content-between align-items-center">
-                  <span class="fw-bold">$25.00</span> <!-- Precio -->
-                  <a href="#" class="btn btn-primary">Go somewhere</a> <!-- Botón -->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
   </main>
 
   <!-- Footer -->
   <footer class="footer pt-5 pb-3">
   <div class="container">
     
-    <!-- Título -->
     <div class="text-center mb-4">
       <h3 class="footer-title">🏆 Nuestro Equipo</h3>
       <p class="text-white-50">Conoce a las personas detrás de LEGENDZONE</p>
@@ -257,7 +119,6 @@
 
   </div>
 </footer>
-
 
 <!-- Modal Login -->
 <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">

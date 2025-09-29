@@ -167,7 +167,6 @@ body {
   scroll-behavior: smooth;
 }
 
-
 #carouselExampleCaptions {
   max-height: 400px; /* Ajusta la altura que quieras */
   overflow: hidden;  /* Oculta cualquier parte que sobresalga */
@@ -177,6 +176,27 @@ body {
   height: 280px;     /* Igual que el max-height del contenedor */
   object-fit: cover;  /* La imagen se recorta para llenar el contenedor */
   width: 100%;
+}
+
+/* Carrito */
+.cart-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+}
+
+.item-details { 
+  flex: 1; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.qty-btn { 
+  width: 30px; 
+  height: 30px;
 }
 
 /* footer estilo dinámico*/
@@ -257,26 +277,5 @@ body {
   font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 30px;
-}
 
-/* Animacion tarjetas */
-.row-hover {
-  display: flex; 
-  gap: 1rem; /* opcional: espacio entre tarjetas */
-}
-
-.row-hover .card {
-  transition: transform 0.3s ease, filter 0.3s ease;
-  position: relative;
-}
-
-.row-hover:hover .card {
-  transform: scale(0.95); /* todas se hacen un poquito más pequeñas */
-  filter: brightness(0.9);
-}
-
-.row-hover .card:hover {
-  transform: scale(1.05); /* la tarjeta activa se agranda */
-  filter: brightness(1);
-  z-index: 2; /* para que esté por encima de las demás */
 }
