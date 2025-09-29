@@ -167,8 +167,6 @@ body {
   scroll-behavior: smooth;
 }
 
-
-<<<<<<< HEAD
 #carouselExampleCaptions {
   max-height: 400px; /* Ajusta la altura que quieras */
   overflow: hidden;  /* Oculta cualquier parte que sobresalga */
@@ -178,6 +176,27 @@ body {
   height: 280px;     /* Igual que el max-height del contenedor */
   object-fit: cover;  /* La imagen se recorta para llenar el contenedor */
   width: 100%;
+}
+
+/* Carrito */
+.cart-item {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+}
+
+.item-details { 
+  flex: 1; 
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
+}
+
+.qty-btn { 
+  width: 30px; 
+  height: 30px;
 }
 
 /* footer estilo dinámico*/
@@ -259,24 +278,3 @@ body {
   font-weight: bold;
   margin-bottom: 30px;
 }
-=======
-/* Carrito */
-.cart-item {
-  display: flex;
-  gap: 15px;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #ccc;
-  padding-bottom: 15px;
-}
-
-.item-details { 
-  flex: 1; 
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center; 
-}
-
-.qty-btn { 
-  width: 30px; 
-  height: 30px;
->>>>>>> 8aeb3f2 (Actualizaciones de index, script y estilos)
