@@ -1,11 +1,9 @@
-// Importa el módulo de Express
 const { Football, BasquetBall, BaseBall } = require("../assets/categorias");
 const express = require('express');
 const cors = require('cors');
 const app = express();
 const PORT = 3000;
 
-// Middleware para parsear el cuerpo de las peticiones JSON
 app.use(express.json());
 app.use(cors());
 
@@ -61,6 +59,7 @@ app.get("/Baseball", async (req, res) => {
 // ==============================================
 // INICIAR EL SERVIDOR
 // ==============================================
+
 app.listen(PORT, () => {
     console.log(`Servidor de Productos Deportivos corriendo en http://localhost:${PORT}`);
 });

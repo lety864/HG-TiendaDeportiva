@@ -3,17 +3,13 @@ const URL_FOOTBALL = "http://localhost:3000/Football";
 const URL_BASQUETBALL = "http://localhost:3000/Basquetball";
 const URL_BASEBALL = "http://localhost:3000/BaseBall";
 
-// const btnFootball = document.getElementById("btnFootball");
-// const btnBasquetBall = document.getElementById("btnBasquetBall");
-// const btnBaseBall = document.getElementById("btnBaseBall");
-
 async function cargarArticulosFootball() {
       try {
-        const res = await fetch(URL_FOOTBALL); // espera la respuesta
-        const data = await res.json(); // espera a convertir en JSON
+        const res = await fetch(URL_FOOTBALL);
+        const data = await res.json();
 
         const container = document.getElementById("articulos");
-        container.innerHTML = ""; // limpiar antes de renderizar
+        container.innerHTML = "";
 
         data.forEach(item => {
           const card = document.createElement("div");
@@ -35,11 +31,11 @@ async function cargarArticulosFootball() {
 
 async function cargarArticulosBasquetBall() {
       try {
-        const res = await fetch(URL_BASQUETBALL); // espera la respuesta
-        const data = await res.json(); // espera a convertir en JSON
+        const res = await fetch(URL_BASQUETBALL);
+        const data = await res.json();
 
         const container = document.getElementById("articulos");
-        container.innerHTML = ""; // limpiar antes de renderizar
+        container.innerHTML = "";
 
         data.forEach(item => {
           const card = document.createElement("div");
@@ -60,11 +56,11 @@ async function cargarArticulosBasquetBall() {
 
 async function cargarArticulosBaseball() {
       try {
-        const res = await fetch(URL_BASEBALL); // espera la respuesta
-        const data = await res.json(); // espera a convertir en JSON
+        const res = await fetch(URL_BASEBALL);
+        const data = await res.json();
 
         const container = document.getElementById("articulos");
-        container.innerHTML = ""; // limpiar antes de renderizar
+        container.innerHTML = "";
 
         data.forEach(item => {
           const card = document.createElement("div");
