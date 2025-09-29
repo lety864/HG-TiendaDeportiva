@@ -166,3 +166,82 @@
 body {
   scroll-behavior: smooth;
 }
+/* footer estilo dinámico*/
+.footer {
+  background: linear-gradient(135deg, #1A1A1A 0%, #2C2C2C 100%);
+  color: white;
+  margin-top: auto;
+}
+
+.team-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 25px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  height: 100%;
+}
+
+.team-card:hover {
+  background: rgba(255, 107, 53, 0.1);
+  border-color: #FF6B35;
+  transform: translateY(-5px);
+}
+
+.team-member-name {
+  color: #FF6B35;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+.team-member-name:hover {
+  color: #004E89;
+  gap: 12px;
+}
+
+.team-role {
+  color: #004E89;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.linkedin-icon {
+  color: #FF6B35;
+  transition: all 0.3s ease;
+}
+
+.team-member-name:hover .linkedin-icon {
+  color: #0077B5;
+  transform: scale(1.2);
+}
+
+.contact-info {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+}
+
+.contact-info i {
+  color: #FF6B35;
+  margin-right: 8px;
+}
+
+.footer-divider {
+  border-color: rgba(255, 107, 53, 0.3);
+  margin: 30px 0;
+}
+
+.copyright {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-title {
+  color: #FF6B35;
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
