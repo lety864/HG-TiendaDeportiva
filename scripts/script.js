@@ -1,3 +1,26 @@
+// ======= Cursor ====== 
+const customCursor = document.getElementById('custom-cursor');
+
+const balls = ['futbol', 'basquet', 'beisbol'];
+let currentBallIndex = 0;
+
+document.addEventListener('mousemove', (e) => {
+    const size = 16; 
+    customCursor.style.transform = `translate(${e.clientX - size}px, ${e.clientY - size}px)`;
+});
+
+function changeBall() {
+    balls.forEach(ball => {
+        customCursor.classList.remove(ball);
+    });
+    const nextBallClass = balls[currentBallIndex];
+    customCursor.classList.add(nextBallClass);
+    currentBallIndex = (currentBallIndex + 1) % balls.length;
+}  
+
+changeBall();
+
+setInterval(changeBall, 1000);
 
 // ======= FUNCIONES DE LOCALSTORAGE =======
 
