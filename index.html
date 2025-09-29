@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src="./scripts/app.js"></script>
+    <link rel="stylesheet" href="">
+    <style>
+    body { font-family: Arial, sans-serif; }
+    .card {
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      padding: 10px;
+      margin: 10px;
+      display: inline-block;
+      width: 220px;
+      text-align: center;
+      box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+    }
+    img { max-width: 100%; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>Lista de Artículos</h1>
+  <button onclick="cargarArticulosFootball()">FootBall</button>
+  <button onclick="cargarArticulosBasquetBall()">Baseball</button>
+  <button onclick="cargarArticulosBaseball()">BasquetBall</button>
+  <div id="articulos"></div>
+</body>
+</html>
