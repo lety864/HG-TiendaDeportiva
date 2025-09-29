@@ -258,8 +258,8 @@ const teamMembers = [
   {
     name: "Grace Palma",
     role: "Desarrolladora Back-End",
-    linkedin: "https://www.linkedin.com/in/TU-PERFIL-REAL",
-    github: "tugithub"
+    linkedin: "https://www.linkedin.com/in/graciam-palma/",
+    github: "gmpalmar7"
   },
 ];
 
