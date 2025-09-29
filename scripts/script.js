@@ -214,59 +214,51 @@ document.addEventListener('DOMContentLoaded', actualizarBadgeCarrito);
 // Datos del equipo del proyecto
 const teamMembers = [
   {
-    name: "TU NOMBRE REAL",
-    role: "Tu Rol Real",
-    linkedin: "https://www.linkedin.com/in/TU-PERFIL-REAL",
-    email: "tu@email.com",
-    github: "tugithub"
+    name: "Juan Pérez",
+    role: "Desarrollador Back-End",
+    linkedin: "https://www.linkedin.com/in/juanpemarc/",
+    github: "juanperez1710"
   },
   {
-    name: "TU NOMBRE REAL",
-    role: "Tu Rol Real",
-    linkedin: "https://www.linkedin.com/in/TU-PERFIL-REAL",
-    email: "tu@email.com",
-    github: "tugithub"
+    name: "Leticia Bermudez",
+    role: "Desarrolladora Back-End",
+    linkedin: "https://www.linkedin.com/in/leticiabermudez/",
+    github: "lety864"
   },
   {
-    name: "TU NOMBRE REAL",
-    role: "Tu Rol Real",
-    linkedin: "https://www.linkedin.com/in/TU-PERFIL-REAL",
-    email: "tu@email.com",
-    github: "tugithub"
+    name: "Rody Castellanos",
+    role: "Desarrollador Front-End",
+    linkedin: "https://www.linkedin.com/in/rody-castellanos/",
+    github: "rodycastellanos"
   },
   {
-    name: "TU NOMBRE REAL",
-    role: "Tu Rol Real",
-    linkedin: "https://www.linkedin.com/in/TU-PERFIL-REAL",
-    email: "tu@email.com",
-    github: "tugithub"
+    name: "Guillermo Olivares",
+    role: "Desarrolador Front-End",
+    linkedin: "https://www.linkedin.com/in/guillermo-og97/",
+    github: "guillermo-oligar"
   },
   {
-    name: "TU NOMBRE REAL",
-    role: "Tu Rol Real",
-    linkedin: "https://www.linkedin.com/in/TU-PERFIL-REAL",
-    email: "tu@email.com",
-    github: "tugithub"
+    name: "Josette Castillo",
+    role: "Desarrollador Front-End",
+    linkedin: "https://www.linkedin.com/in/josette-castillo/",
+    github: "JosettCast"
   },
   {
-    name: "TU NOMBRE REAL",
-    role: "Tu Rol Real",
-    linkedin: "https://www.linkedin.com/in/TU-PERFIL-REAL",
-    email: "tu@email.com",
-    github: "tugithub"
+    name: "Brenda Reyes",
+    role: "Diseñadora y Desarrolladora Front-End",
+    linkedin: "https://www.linkedin.com/in/brenda-reyes-/",
+    github: "Labrenreyes"
   },
   {
-    name: "TU NOMBRE REAL",
-    role: "Tu Rol Real",
-    linkedin: "https://www.linkedin.com/in/TU-PERFIL-REAL",
-    email: "tu@email.com",
-    github: "tugithub"
+    name: "Luis Márquez",
+    role: "Desarrollador Fron-End",
+    linkedin: "https://www.linkedin.com/in/luis-carlos-marquez-medina/",
+    github: "CodingCharly"
   },
   {
-    name: "TU NOMBRE REAL",
-    role: "Tu Rol Real",
+    name: "Grace Palma",
+    role: "Desarrolladora Back-End",
     linkedin: "https://www.linkedin.com/in/TU-PERFIL-REAL",
-    email: "tu@email.com",
     github: "tugithub"
   },
 ];
@@ -291,12 +283,8 @@ function renderTeam() {
             ${member.name}
             <i class="bi bi-linkedin linkedin-icon"></i>
           </a>
-          <p class="team-role mt-2">${member.role}</p>
+          <p class="team-role mt-0">${member.role}</p>
           <div class="contact-info mt-3">
-            <p class="mb-2">
-              <i class="bi bi-envelope-fill"></i>
-              ${member.email}
-            </p>
             <p class="mb-0">
               <i class="bi bi-github"></i>
               @${member.github}
