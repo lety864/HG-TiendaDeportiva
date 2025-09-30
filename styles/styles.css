@@ -33,6 +33,35 @@
   --negro: #1A1A1A;
 }
 
+/* Oculta el cursor real en toda la página */
+body {
+    cursor: none !important; 
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo del puntero falso */
+#custom-cursor {
+    position: fixed;         
+    pointer-events: none;    
+    width: 32px;            
+    height: 32px;
+    z-index: 10000;          
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent; 
+}
+
+/* Clases para cambiar la imagen del balón */
+.futbol { background-image: url('../assets/img/futbol.png'); }
+.basquet { background-image: url('../assets/img/baloncesto.png'); }
+.beisbol { background-image: url('../assets/img/beisbol.png'); }
+
+
+
 /* Navbar */
 
 .navbar-brand img {
