@@ -29,52 +29,57 @@
             </div>
         </div>
     </nav>
-
-    <div class="cart-container" style="margin-top: 100px;">
-        <div class="cart-header">
-            <h1>Carrito de Compras</h1>
-            <p><span id="itemCount">0</span> productos en tu carrito</p>
+     <div class="container mt-5 pt-4">
+        <div class="text-center my-5">
+            <h1 class="display-5 fw-bold text-dark">Carrito de Compras</h1>
+            <p class="lead text-muted"><span id="itemCount">0</span> productos en tu carrito</p>
         </div>
 
-        <div class="cart-items" id="cartItemsContainer">
-        </div>
-
-        <div class="order-summary">
-            <h2 class="summary-header">Resumen del Pedido</h2>
-            
-            <div class="summary-row">
-                <span class="label">Subtotal</span>
-                <span class="value" id="subtotal">$0</span>
-            </div>
-            <div class="summary-row">
-                <span class="label">Envío</span>
-                <span class="value">GRATIS</span>
-            </div>
-            <div class="summary-row">
-                <span class="label">Impuestos estimados</span>
-                <span class="value" id="taxes">$0</span>
+         <div class="row">
+            <div class="col-lg-8 mb-4">
+                <h2 class="h4 mb-4 pb-2 border-bottom">Detalle de Productos</h2>
+                <div class="cart-items" id="cartItemsContainer">
+                    </div>
             </div>
 
-            <div class="promo-code">
-                <div class="promo-input-group">
-                    <input type="text" class="promo-input" placeholder="Código de descuento">
-                    <button class="promo-btn">Aplicar</button>
+        <div class="col-lg-4 mb-4">
+                <div class="order-summary p-4 rounded shadow-sm">
+                    <h2 class="h4 summary-header border-bottom pb-2 mb-3">Resumen del Pedido</h2>
+                    
+                    <div class="summary-row d-flex justify-content-between mb-2">
+                        <span class="label">Subtotal</span>
+                        <span class="value" id="subtotal">$0</span>
+                    </div>
+                    <div class="summary-row d-flex justify-content-between mb-2">
+                        <span class="label">Envío</span>
+                        <span class="value text-success">GRATIS</span>
+                    </div>
+                    <div class="summary-row d-flex justify-content-between mb-3 border-bottom pb-3">
+                        <span class="label">Impuestos estimados</span>
+                        <span class="value" id="taxes">$0</span>
+                    </div>
+
+                    <div class="promo-code mb-4">
+                        <div class="input-group">
+                           <input type="text" class="form-control promo-input" placeholder="Código de descuento">
+                           <button class="btn promo-btn" type="button">Aplicar</button>
+                        </div>
+                    </div>
+
+                    <div class="summary-total d-flex justify-content-between h5 fw-bold pt-2 border-top">
+                        <span class="label">Total</span>
+                        <span class="value" id="total">$0</span>
+                    </div>
+
+                    <button class="checkout-btn w-100 btn btn-lg mt-3" onclick="checkout()">Proceder al Pago</button>
+                    <div class="secure-checkout text-center small mt-2 text-muted">Pago 100% seguro y encriptado</div>
+                    <div class="continue-shopping text-center mt-3">
+                        <a href="index.html" class="text-decoration-none">← Continuar Comprando</a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="summary-total">
-                <span class="label">Total</span>
-                <span class="value" id="total">$0</span>
-            </div>
-
-            <button class="checkout-btn" onclick="checkout()">Proceder al Pago</button>
-            <div class="secure-checkout">Pago 100% seguro y encriptado</div>
-            <div class="continue-shopping">
-                <a href="/index.html">← Continuar Comprando</a>
             </div>
         </div>
     </div>
-
     <!-- Footer -->
   <footer class="footer pt-5 pb-3">
   <div class="container">
