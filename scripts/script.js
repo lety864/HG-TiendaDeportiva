@@ -1,4 +1,4 @@
-// ======= Cursor ====== 
+// ====== Cursor =======//
 const customCursor = document.getElementById('custom-cursor');
 
 const balls = ['futbol', 'basquet', 'beisbol'];
@@ -13,14 +13,19 @@ function changeBall() {
     balls.forEach(ball => {
         customCursor.classList.remove(ball);
     });
+    
     const nextBallClass = balls[currentBallIndex];
     customCursor.classList.add(nextBallClass);
+
     currentBallIndex = (currentBallIndex + 1) % balls.length;
 }  
 
 changeBall();
 
 setInterval(changeBall, 1000);
+
+
+
 
 // ======= FUNCIONES DE LOCALSTORAGE =======
 
@@ -134,7 +139,7 @@ function renderizarCarrito() {
       </div>
       <div class="item-details">
         <div>
-          <div class="item-brand">${item.categoria}</div>
+         
           <h3 class="item-name">${item.nombre}</h3>
         </div>
         <div class="item-actions">
