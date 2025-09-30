@@ -658,7 +658,7 @@ body {
 }
 
 .promo-btn {
-    background-color: var(--naranja-dorado);
+    background-color: var(--naranja-dorado) !important;
     color: var(--negro);
     font-weight: 600;
     border: none;
@@ -666,11 +666,11 @@ body {
 }
 
 .promo-btn:hover {
-    background-color: var(--naranja-dorado-oscuro);
+    background-color: var(--naranja-dorado-oscuro) !important;
 }
 
 .checkout-btn {
-    background-color: var( --naranja-rojo-oscuro);
+    background-color: #FF6B35 !important;
     color: var(--blanco);
     font-weight: bold;
     border: none;
@@ -678,7 +678,7 @@ body {
   
 }
 .checkout-btn:hover {
-    background-color: var( --naranja-rojo-oscuro);
+    background-color: var( --naranja-rojo-oscuro) !important;
     transform: translateY(-2px); 
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
