@@ -93,16 +93,29 @@
   <main class="container my-5" id="productos">
     <section id="baseball" class="mb-5">
       <h2 class="mb-4">Articulos</h2>
-      <!-- botones -->
-      <button type="button" onclick="cargarArticulosFootball()" class="btn btn-success">Soccer</button>
-      <button type="button" onclick="cargarArticulosBasquetBall()" class="btn btn-success">Basquetball</button>
-      <button type="button" onclick="cargarArticulosBaseball()" class="btn btn-success">Baseball</button>
-        <!-- Productos inyectados desde JS -->
-        <div class="row mt-4" id="articulos">
-          <!-- Card -->
-        </div>
+      
+      <!-- Botones de categorías con íconos -->
+      <div class="category-buttons-container">
+        <button type="button" onclick="cargarArticulosFootball()" class="category-btn" data-category="soccer">
+          <span class="btn-icon">⚽</span>
+          <span class="btn-text">Soccer</span>
+        </button>
+        <button type="button" onclick="cargarArticulosBasquetBall()" class="category-btn" data-category="basketball">
+          <span class="btn-icon">🏀</span>
+          <span class="btn-text">Basketball</span>
+        </button>
+        <button type="button" onclick="cargarArticulosBaseball()" class="category-btn" data-category="baseball">
+          <span class="btn-icon">⚾</span>
+          <span class="btn-text">Baseball</span>
+        </button>
+      </div>
+      
+      <!-- Productos inyectados desde JS -->
+      <div class="row mt-4" id="articulos">
+        <!-- Card -->
+      </div>
     </section>
-  </main>
+</main>
 
   <!-- Footer -->
   <footer class="footer pt-5 pb-3">
