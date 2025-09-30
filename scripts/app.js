@@ -43,10 +43,10 @@ async function cargarArticulosFootball() {
             <div class="card h-100">
             <img src="${item.imagen}" class="card-img-top" alt="${item.nombre}">
               <div class="card-body">
-                <h5 class="card-title">${item.nombre}</h5>
+                <h5 class="card-title text-center">${item.nombre}</h5>
                 <p class="card-text text-center">Stock: ${item.stock}</p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <span class="fw-bold">${item.precio}</span>
+                  <span class="fw-bold">$ ${item.precio}</span>
                   <a href="#" 
                         class="btn btn-primary agregar-carrito" 
                         data-id="${item.id}" data-nombre="${item.nombre}"  data-precio="${item.precio}"  data-img="${item.imagen}"
@@ -87,7 +87,7 @@ async function cargarArticulosBasquetBall() {
                 <h5 class="card-title">${item.nombre}</h5>
                 <p class="card-text text-center">Stock: ${item.stock}</p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <span class="fw-bold">${item.precio}</span>
+                  <span class="fw-bold">$ ${item.precio}</span>
                   <a href="#" 
                         class="btn btn-primary agregar-carrito" 
                         data-id="${item.id}" data-nombre="${item.nombre}"  data-precio="${item.precio}"  data-img="${item.imagen}"
@@ -127,7 +127,7 @@ async function cargarArticulosBaseball() {
                 <h5 class="card-title">${item.nombre}</h5>
                 <p class="card-text text-center">Stock: ${item.stock}</p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <span class="fw-bold">${item.precio}</span>
+                  <span class="fw-bold">$ ${item.precio}</span>
                   <a href="#" 
                         class="btn btn-primary agregar-carrito" 
                         data-id="${item.id}" data-nombre="${item.nombre}"  data-precio="${item.precio}"  data-img="${item.imagen}"
