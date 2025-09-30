@@ -25,7 +25,33 @@ changeBall();
 setInterval(changeBall, 1000);
 
 
+// ========== BOTONES DE CATEGORÍAS ACTIVOS ==========
 
+function setActiveButton(clickedButton) {
+  // Remueve la clase active de todos los botones
+  document.querySelectorAll('.category-btn').forEach(btn => {
+    btn.classList.remove('active');
+  });
+  
+  // Agrega la clase active al botón clickeado
+  clickedButton.classList.add('active');
+}
+
+// Funciones de carga de artículos con efecto activo
+function cargarArticulosFootball() {
+  setActiveButton(event.currentTarget);
+  // Tu código existente aquí para cargar artículos de football...
+}
+
+function cargarArticulosBasquetBall() {
+  setActiveButton(event.currentTarget);
+  // Tu código existente aquí para cargar artículos de basketball...
+}
+
+function cargarArticulosBaseball() {
+  setActiveButton(event.currentTarget);
+  // Tu código existente aquí para cargar artículos de baseball...
+}
 
 // ======= FUNCIONES DE LOCALSTORAGE =======
 
@@ -239,7 +265,8 @@ if (window.location.pathname.includes('carrito.html')) {
 
 document.addEventListener('DOMContentLoaded', actualizarBadgeCarrito);
 
-// Datos del equipo del proyecto
+// ======= EQUIPO DEL PROYECTO =======
+
 const teamMembers = [
   {
     name: "Juan Pérez",

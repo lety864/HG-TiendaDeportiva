@@ -135,6 +135,154 @@ body {
   color: var(--negro);
 }
 
+/* ========== BOTONES DE CATEGORÍAS ========== */
+
+/* Contenedor de botones */
+.category-buttons-container {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+/* Estilo base de los botones - TODOS IGUALES */
+.category-btn {
+  flex: 1;
+  min-width: 200px;
+  padding: 20px 30px;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.4s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  /* Degradado naranja suave para botones normales */
+  background: linear-gradient(135deg, var(--naranja-dorado), var(--naranja-intenso));
+  color: var(--blanco);
+  opacity: 0.7;
+}
+
+/* Ícono del botón */
+.category-btn .btn-icon {
+  font-size: 1.8rem;
+  transition: transform 0.3s ease;
+}
+
+/* Texto del botón */
+.category-btn .btn-text {
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Efecto hover en botones NO activos */
+.category-btn:hover:not(.active) {
+  opacity: 0.85;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(255, 165, 0, 0.3);
+}
+
+.category-btn:hover .btn-icon {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Efecto de clic - SE CONTRAE AL PRESIONAR */
+.category-btn:active {
+  transform: translateY(4px) scale(0.95);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.1s ease;
+}
+
+/* ========== BOTÓN ACTIVO - SE ILUMINA ========== */
+.category-btn.active {
+  /* Degradado naranja intenso + amarillo brillante */
+  background: linear-gradient(135deg, var(--amarillo-brillante), var(--naranja-intenso), var(--naranja-rojo));
+  box-shadow: 0 8px 30px rgba(255, 184, 0, 0.6);
+  opacity: 1;
+  transform: translateY(-5px) scale(1.05);
+  border: 2px solid var(--amarillo-brillante);
+}
+
+.category-btn.active .btn-icon {
+  animation: bounce 0.6s ease;
+  filter: drop-shadow(0 0 10px rgba(255, 184, 0, 0.8));
+}
+
+/* Hover en botón activo - aún más intenso */
+.category-btn.active:hover {
+  box-shadow: 0 10px 35px rgba(255, 184, 0, 0.8);
+  transform: translateY(-6px) scale(1.05);
+}
+
+/* Animación de rebote para el ícono activo */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Efecto de brillo animado */
+.category-btn::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transform: rotate(45deg);
+  transition: all 0.6s ease;
+}
+
+.category-btn:hover::before {
+  left: 100%;
+}
+
+/* Pulso de luz en botón activo */
+.category-btn.active::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 184, 0, 0.3) 0%, transparent 70%);
+  transform: translate(-50%, -50%);
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.5;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    opacity: 0.8;
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .category-buttons-container {
+    flex-direction: column;
+  }
+  
+  .category-btn {
+    width: 100%;
+    min-width: auto;
+  }
+}
 /* Productos */
 .productos .card {
   transition: transform 0.3s, box-shadow 0.3s;
