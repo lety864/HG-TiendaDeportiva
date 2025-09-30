@@ -7,7 +7,7 @@ describe("Probando el método GET de football", () => {
         expect(response.statusCode).toBe(200);
          expect(response.body[0]).toHaveProperty('nombre', 'Balón de Fútbol');
     })
-})
+  })
 
 
 describe('Probando el método GET de Basquetball', () => {
