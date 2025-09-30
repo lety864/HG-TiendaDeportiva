@@ -63,3 +63,13 @@ app.get("/Baseball", async (req, res) => {
 app.listen(PORT, () => {
     console.log(`Servidor de Productos Deportivos corriendo en http://localhost:${PORT}`);
 });
+
+// identificar el port para las pruebas unitarias
+if (process.env.NODE_ENV !== 'test') {
+    app.listen(PORT, () => {
+        console.log(`Servidor de Productos Deportivos corriendo en http://localhost:${PORT}`);
+    });
+}
+
+// Exportar 'app' para las pruebas unitarias
+module.exports = app; 
