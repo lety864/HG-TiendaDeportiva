@@ -125,7 +125,7 @@ function renderizarCarrito() {
       <div class="text-center py-5">
         <i class="bi bi-cart-x" style="font-size: 5rem; color: #ccc;"></i>
         <h3 class="mt-3">Tu carrito está vacío</h3>
-        <a href="index.html" class="btn btn-primary mt-3">Ir a comprar</a>
+        <a href="/index.html" class="btn btn-primary mt-3">Ir a comprar</a>
       </div>
     `;
     actualizarTotales();
@@ -134,8 +134,8 @@ function renderizarCarrito() {
   
   contenedor.innerHTML = carrito.map(item => `
     <div class="cart-item" data-id="${item.id}">
-      <div class="item-image">
-        <img src="${item.img}" alt="${item.nombre}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+      <div class="item-image" style=" justify-content:center; align-items:center; padding:10px;">
+        <img src="${item.img}" alt="${item.nombre}" style="border-radius: 10px;">
       </div>
       <div class="item-details">
         <div>
