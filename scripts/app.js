@@ -22,7 +22,10 @@ async function cargarArticulosFootball() {
                 <p class="card-text text-center">Stock: ${item.stock}</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <span class="fw-bold">${item.precio}</span> <!-- Precio -->
-                  <a href="#" class="btn btn-primary">Agregar a carrito</a> <!-- Botón -->
+                  <a href="#" 
+                        class="btn btn-primary agregar-carrito" 
+                        data-id="${item.id}" data-nombre="${item.nombre}"  data-precio="${item.precio}"  data-img="${item.imagen}"
+                    >Agregar a carrito</a> <!-- Botón -->
                 </div>              
               </div>
             </div>
@@ -55,7 +58,10 @@ async function cargarArticulosBasquetBall() {
                 <p class="card-text text-center">Stock: ${item.stock}</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <span class="fw-bold">${item.precio}</span> <!-- Precio -->
-                  <a href="#" class="btn btn-primary">Agregar a carrito</a> <!-- Botón -->
+                  <a href="#" 
+                        class="btn btn-primary agregar-carrito" 
+                        data-id="${item.id}" data-nombre="${item.nombre}"  data-precio="${item.precio}"  data-img="${item.imagen}"
+                    >Agregar a carrito</a> <!-- Botón -->
                 </div>              
               </div>
             </div>
@@ -87,7 +93,10 @@ async function cargarArticulosBaseball() {
                 <p class="card-text text-center">Stock: ${item.stock}</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <span class="fw-bold">${item.precio}</span> <!-- Precio -->
-                  <a href="#" class="btn btn-primary">Agregar a carrito</a> <!-- Botón -->
+                  <a href="#" 
+                        class="btn btn-primary agregar-carrito" 
+                        data-id="${item.id}" data-nombre="${item.nombre}"  data-precio="${item.precio}"  data-img="${item.imagen}"
+                    >Agregar a carrito</a> <!-- Botón -->
                 </div>              
               </div>
             </div>
