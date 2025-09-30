@@ -40,3 +40,7 @@ Landing page con diseño moderno, atractivo e interactivo para promover producto
 * Luis Márquez
 * Gracia Palma
 
+## ✅ Verificación de Test
+<img width="941" height="362" alt="Captura de pantalla (475)" src="https://github.com/user-attachments/assets/1a6c3f74-69f4-41b1-883d-82b29419fa76" />
+
+
