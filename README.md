@@ -18,8 +18,6 @@ Landing page con diseño moderno, atractivo e interactivo para promover producto
 ## 🎨 Paleta de Colores
 * Azul medio: #0080FF / #0066FF 
 * Azul-violeta: #4D5BFF / #5B4DFF
-* Morado medio: #7733FF / #8844FF
-* Morado profundo: #6622DD / #5511CC
 * Amarillo brillante: #FFB800 / #FFC425
 * Naranja dorado: #FFA500 / #FF9500
 * Naranja intenso: #FF7B00 / #FF6B35
@@ -28,5 +26,21 @@ Landing page con diseño moderno, atractivo e interactivo para promover producto
 * Rosa-rojo: #FF1744 / #E91E63
 
 ## ✨ Secciones de la Landing
-➡️ Inicio/Productos destacados 
+➡️ Inicio/Artículos 
 ➡️ Carrito de compras
+➡️ Login
+
+## 👥 Participantes del equipo
+* Juan Pérez
+* Leticia Bermudez
+* Rody Castellanos 
+* Guillermo Olivares
+* Josette Castillo
+* Brenda Reyes
+* Luis Márquez
+* Gracia Palma
+
+## ✅ Verificación de Test
+<img width="941" height="362" alt="Captura de pantalla (475)" src="https://github.com/user-attachments/assets/1a6c3f74-69f4-41b1-883d-82b29419fa76" />
+
+

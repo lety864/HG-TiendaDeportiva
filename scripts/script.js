@@ -1,3 +1,57 @@
+// ====== Cursor =======//
+const customCursor = document.getElementById('custom-cursor');
+
+const balls = ['futbol', 'basquet', 'beisbol'];
+let currentBallIndex = 0;
+
+document.addEventListener('mousemove', (e) => {
+    const size = 16; 
+    customCursor.style.transform = `translate(${e.clientX - size}px, ${e.clientY - size}px)`;
+});
+
+function changeBall() {
+    balls.forEach(ball => {
+        customCursor.classList.remove(ball);
+    });
+    
+    const nextBallClass = balls[currentBallIndex];
+    customCursor.classList.add(nextBallClass);
+
+    currentBallIndex = (currentBallIndex + 1) % balls.length;
+}  
+
+changeBall();
+
+setInterval(changeBall, 1000);
+
+
+// ========== BOTONES DE CATEGORÍAS ACTIVOS ==========
+
+function setActiveButton(clickedButton) {
+  // Remueve la clase active de todos los botones
+  document.querySelectorAll('.category-btn').forEach(btn => {
+    btn.classList.remove('active');
+  });
+  
+  // Agrega la clase active al botón clickeado
+  clickedButton.classList.add('active');
+}
+
+// Funciones de carga de artículos con efecto activo
+function cargarArticulosFootball() {
+  setActiveButton(event.currentTarget);
+  // Tu código existente aquí para cargar artículos de football...
+}
+
+function cargarArticulosBasquetBall() {
+  setActiveButton(event.currentTarget);
+  // Tu código existente aquí para cargar artículos de basketball...
+}
+
+function cargarArticulosBaseball() {
+  setActiveButton(event.currentTarget);
+  // Tu código existente aquí para cargar artículos de baseball...
+}
 
 // ======= FUNCIONES DE LOCALSTORAGE =======
 
@@ -97,7 +151,7 @@ function renderizarCarrito() {
       <div class="text-center py-5">
         <i class="bi bi-cart-x" style="font-size: 5rem; color: #ccc;"></i>
         <h3 class="mt-3">Tu carrito está vacío</h3>
-        <a href="index.html" class="btn btn-primary mt-3">Ir a comprar</a>
+        <a href="/index.html" class="btn btn-primary mt-3">Ir a comprar</a>
       </div>
     `;
     actualizarTotales();
@@ -106,12 +160,12 @@ function renderizarCarrito() {
   
   contenedor.innerHTML = carrito.map(item => `
     <div class="cart-item" data-id="${item.id}">
-      <div class="item-image">
-        <img src="${item.img}" alt="${item.nombre}" style="width: 100%; height: 100%; object-fit: cover; border-radius: 10px;">
+      <div class="item-image" style=" justify-content:center; align-items:center; padding:10px;">
+        <img src="${item.img}" alt="${item.nombre}" style="border-radius: 10px;">
       </div>
       <div class="item-details">
         <div>
-          <div class="item-brand">${item.categoria}</div>
+         
           <h3 class="item-name">${item.nombre}</h3>
         </div>
         <div class="item-actions">
@@ -211,7 +265,8 @@ if (window.location.pathname.includes('carrito.html')) {
 
 document.addEventListener('DOMContentLoaded', actualizarBadgeCarrito);
 
-// Datos del equipo del proyecto
+// ======= EQUIPO DEL PROYECTO =======
+
 const teamMembers = [
   {
     name: "Juan Pérez",
@@ -258,8 +313,8 @@ const teamMembers = [
   {
     name: "Grace Palma",
     role: "Desarrolladora Back-End",
-    linkedin: "https://www.linkedin.com/in/TU-PERFIL-REAL",
-    github: "tugithub"
+    linkedin: "https://www.linkedin.com/in/graciam-palma/",
+    github: "gmpalmar7"
   },
 ];
 
